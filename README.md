@@ -3,8 +3,6 @@ For Learning
 
 Step Run Project
 
-1.Setup npm
-npm i
+1.npm i
 
-2.Run Project
-node --watch server.js
+2.node --watch server.js
