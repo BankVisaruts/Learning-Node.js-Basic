@@ -37,6 +37,7 @@ model Order {
   payDate DateTime?
   customerId Int
   customer Customer @relation(fields: [customerId], references: [id])
+  OrderDetail OrderDetail[]
 }
 
 model OrderDetail {
@@ -44,4 +45,5 @@ model OrderDetail {
   orderId Int
   bookId Int
   book Book @relation(fields: [bookId], references: [id])
+  Order Order @relation(fields: [orderId], references: [id])
 }
